@@ -23,14 +23,15 @@ Aplikasi pencatat kegiatan harian berbasis JavaFX yang menerapkan pola arsitektu
 
 4. Aplikasi siap digunakan! 🎉
 
-# Teknologi yang Digunakan
+## Teknologi yang Digunakan
 Java 24
 
 JavaFX 25
 
 Maven (build system)
 
-## Pengembang
+
+## Developer
 
 Naail S. — Tugas latihan JavaFX MVC
 
