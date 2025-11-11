@@ -2,6 +2,10 @@
 Aplikasi pencatat kegiatan harian berbasis JavaFX yang menerapkan pola arsitektur Model–View–Controller (MVC).
 <br>
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/a2e893dd-c6ad-4b18-a9b2-1eb2fc3ef37c" />
+
+
+
 ## Fitur Utama
 ✏️ Tambah, Edit, Hapus (CRUD) data kegiatan.
 
@@ -29,6 +33,8 @@ Java 24
 JavaFX 25
 
 Maven (build system)
+
+## Lampiran Gambar
 
 
 ## Developer
