@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="650.0"
+            xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controller.KegiatanController"
+            style="-fx-background-color: linear-gradient(to bottom right, #c7e3ff, #e8f3ff);">
+    <children>
+
+        <!-- Judul -->
+        <Label layoutX="210.0" layoutY="15.0" text="⚡ Aktivee"
+               style="-fx-text-fill: #1f4e79; -fx-font-weight: bold;">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <!-- Label dan Input -->
+        <Label layoutX="60.0" layoutY="65.0" text="Nama Kegiatan"
+               style="-fx-text-fill: #1f4e79; -fx-font-weight: bold;" />
+        <TextField fx:id="txtNama" layoutX="180.0" layoutY="60.0" prefWidth="200.0"
+                   style="-fx-background-radius: 10; -fx-background-color: #ffffff; -fx-border-color: #a3c9f9; -fx-border-radius: 10;" />
+
+        <Label layoutX="60.0" layoutY="105.0" text="Tanggal"
+               style="-fx-text-fill: #1f4e79; -fx-font-weight: bold;" />
+        <DatePicker fx:id="dpTanggal" layoutX="180.0" layoutY="100.0"
+                    style="-fx-background-radius: 10; -fx-border-color: #a3c9f9; -fx-border-radius: 10;" />
+
+        <CheckBox fx:id="cbSelesai" layoutX="400.0" layoutY="103.0" text="Selesai"
+                  style="-fx-text-fill: #1f4e79;" />
+
+        <!-- Tombol CRUD -->
+        <Button layoutX="180.0" layoutY="145.0" prefWidth="80.0" text="Add"
+                onAction="#handleAdd"
+                style="-fx-background-color: #4f93ff; -fx-text-fill: white; -fx-background-radius: 10;" />
+        <Button layoutX="270.0" layoutY="145.0" prefWidth="80.0" text="Edit"
+                onAction="#handleEdit"
+                style="-fx-background-color: #5db8ff; -fx-text-fill: white; -fx-background-radius: 10;" />
+        <Button layoutX="360.0" layoutY="145.0" prefWidth="80.0" text="Delete"
+                onAction="#handleDelete"
+                style="-fx-background-color: #8ec9ff; -fx-text-fill: white; -fx-background-radius: 10;" />
+
+        <!-- Table -->
+        <TableView fx:id="tvKegiatan" layoutX="60.0" layoutY="190.0"
+                   prefHeight="200.0" prefWidth="530.0"
+                   style="-fx-background-color: #f8fbff; -fx-border-color: #a3c9f9; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <columns>
+                <TableColumn fx:id="colNama" prefWidth="220.0" text="Nama Kegiatan" />
+                <TableColumn fx:id="colTanggal" prefWidth="150.0" text="Tanggal" />
+                <TableColumn fx:id="colSelesai" prefWidth="120.0" text="Selesai" />
+            </columns>
+        </TableView>
+
+        <!-- Footer -->
+        <Label layoutX="235.0" layoutY="400.0" text="© Naail | JavaFX MVC"
+               style="-fx-text-fill: #527ba0; -fx-font-size: 11px;" />
+
+    </children>
+</AnchorPane>
